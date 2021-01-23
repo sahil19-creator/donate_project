@@ -85,6 +85,7 @@
 }
 
 .shalf img {
+    height: 50%;
     width: 100%;
     display: block;
     border: 1px solid white;
@@ -370,6 +371,7 @@
     }
     .thumbnail img {
         width: 380px;
+        height: 200px;
     }
     .nav-list {
         flex-direction: column;
