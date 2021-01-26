@@ -6,3 +6,9 @@ def home(request):
         return render(request,"index.html")
     except Exception as e:
         print("Error in Fetching Home ::::::",e )
+
+def pay(request):
+    try:
+        return render(request,"payment.html")
+    except Exception as e:
+        print("Error in payment page ::::: ",e )

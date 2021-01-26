@@ -341,7 +341,15 @@
 .formBx{
     margin-left: 60px ;
 }
-
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.borDer {
+    border : 2px inset red;
+}
 @media only screen and (max-width:1140px) {
     .logo img {
         width: 80px;

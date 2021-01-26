@@ -9,21 +9,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 </head>
 <body>
-		<nav class="navbar background">
-			<ul class="nav-list" >
-				<div class="logo" id="ham" ><img src="{% static 'img/d0g-logo.jpg' %}" alt="logo"/></div>
-			      
-				<li><a  href="#home">Home</a></li>
-				<li><a  href="#About">About</a></a></li>
-				<li><a href="#services">services</a></li>
-				<li><a  href="#Contact">Contact</a></li>
-		
-			</ul>
-			<div class="rightnav">
-				<button class="btn">Login</button>
-				<button class="btn">Signup</button>
-			</div>
-		</nav>
+		{% include "header.html" %}
 
 		<section class="background firstsection" >
 			<div class="box-main">
@@ -71,41 +57,7 @@
 			</div>
 		</section>
 		<br>
-		<footer class="footer_container">
-			<div class="footer-box box1">
-				<h2>Our Location</h2>
-				<ul>
-					<li><label>ADDRESS</label>
-						<p>Cecilia Chapman
-						711-2880 Nulla St.</p></li>
-					<li><label>Phone</label>
-					<p>9815998116</p></li>
-					<li><label>Email</label><p>Sahilnagpal97@gmail.com</p></li>
-					
-				</ul>
-			</div>
-			<div class="footer-box box2">
-				<h2>Quick Links</h2>
-				<ul>
-					<li>New Products</li>
-					<li>Your Subscription</li>
-					<li>Plans</li>
-					<li>Our Products</li>
-				</ul>
-			</div>
-			<div class="footer-box box3">
-				<h2>Contact us</h2>
-				<ul>
-					<li><label>Name</label>  <span class="formBx"><input " type="text"  /></span></li>
-					<li><label>Email</label> <span class="formBx"><input class="formBx" type="text" /></span></li>
-					<li><label>Phone</label> <span class="formBx"><input  type="text" /> </span></li>
-                    <li><label>Message</label> <span class="formBx"><textarea class="formBx"></textarea></span></li>
-                    <li><button>Submit</button></li>
-                </ul>
-                
-
-			</div>
-		</footer>
+		{% include "footer.html" %}
 <script type="text/javascript" src="{% static 'js/site.js' %}"></script>
 </body>
 </html>
