@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from frontend.models import Animals
 # Create your views here.
 def home(request):
     try:
@@ -7,8 +7,9 @@ def home(request):
     except Exception as e:
         print("Error in Fetching Home ::::::",e )
 
-def pay(request):
+def donate_page(request):
     try:
-        return render(request,"donate.html")
+        obj = Animals.objects.all()
+        return render(request,"donate.html",{'Animal_data':obj})
     except Exception as e:
         print("Error in payment page ::::: ",e )
